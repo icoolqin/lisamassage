@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* 定义浮动按钮样式 */
+.float-button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.float-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366; /* 可以更改按钮颜色 */
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+}
+
+/* 添加图标和按钮文本 */
+.float-button i,
+.float-button span {
+  display: none;
+}
+
+.float-button:hover i,
+.float-button:hover span {
+  display: inline;
+}
+
+/* 手机图标 */
+.phone-icon {
+  margin-right: 5px;
+}
+</style>
+</head>
+<body>
+
+<div class="float-button-container">
+  <a href="https://wa.me/+971586875578" target="_blank" class="float-button">
+    <i class="phone-icon">📞</i>
+    <span>WhatsApp</span>
+  </a>
+</div>
+
+</body>
+</html>
