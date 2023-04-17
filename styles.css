@@ -1,0 +1,100 @@
+.navbar-custom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(5px); /* 玻璃磨砂效果 */
+    background-color: rgba(255, 255, 255, 0.75); /* 原始颜色，添加透明度 */
+    z-index: 1000; /* 置于内容之上 */
+  }
+/* 背景图、主标题、副标题 */
+.hero {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url('./asset/g1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-content {
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  h1, h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: #fff; 
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 720px;
+    object-fit: cover;
+  }  
+
+  .address-section {
+    padding: 20px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .address-section .fas {
+    margin-right: 10px;
+  }
+  
+  
+  /* 悬浮按钮 */
+  .floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .whatsapp,
+  .phone-call {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #28a745;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    color: #fff;
+    transition: all 0.3s;
+  }
+  
+  .phone-call {
+    background-color: #007bff;
+  }
+  
+  .whatsapp:hover,
+  .phone-call:hover {
+    transform: scale(1.1) rotate(45deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  .whatsapp,
+  .phone-call {
+    animation: float 1s ease-in-out infinite;
+  }
+  
