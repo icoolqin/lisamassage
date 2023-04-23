@@ -15,7 +15,7 @@
 /* 背景图、主标题、副标题 */
 .hero {
     background-color: rgba(0, 0, 0, 0.5);
-    background-image: url('./asset/g1.jpeg');
+    background-image: url('./asset/b5.png');
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply; 
